@@ -122,6 +122,7 @@
 + ScottPlot: Interactive plotting library for .NET
 + Testcontainers
 + DynamicData
++ McMaster.Extensions.CommandLineUtils
 + ZenRows
 
 ## ZenRows
