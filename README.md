@@ -121,6 +121,7 @@
 + ZXing.NET
 + ScottPlot: Interactive plotting library for .NET
 + Testcontainers
++ DynamicData
 + ZenRows
 
 ## ZenRows
@@ -130,3 +131,39 @@
 
 ## List of Automated Testing (TDD/BDD/ATDD/SBE) Tools and Frameworks for .NET
 https://github.com/dariusz-wozniak/List-of-Testing-Tools-and-Frameworks-for-.NET
+
+## Clean Architecture
+
+Clean Architecture is a software design philosophy introduced by Robert C. Martin (often referred to as Uncle Bob) that emphasizes the separation of concerns, maintainability, and testability of software systems. The architecture consists of concentric circles, where each circle represents a different layer in the application. The innermost layer consists of the core business logic and is unaffected by external factors, while the outer layers handle user interface, frameworks, and other external systems.
+
+### Key Concepts of Clean Architecture:
+
+##### Separation of Concerns: Different responsibilities are assigned to different layers, allowing for easier navigation, maintenance, and understanding.
+##### Dependency Rule: Dependencies should only point inward; outer layers can depend on inner layers, but not vice versa. This means the core business logic is independent of frameworks, UI, and other external systems.
+##### Independence: The architecture is independent of any specific technology, making it easier to change technologies without affecting the core business logic.
+##### Testability: By isolating business rules from external concerns, it becomes easier to create automated tests for the core logic.
+
+### Layers of Clean Architecture:
+
+##### Entities: Core business rules and models.
+##### Use Cases (or Interactors): Application-specific business rules relating to how entities are used.
+##### Interface Adapters: Conversion of data, containing controllers and presenters to prepare data for presentation.
+##### Frameworks and Drivers: External frameworks, UI, databases, and other external tools.
+
+### Advantages of Clean Architecture:
+
+##### Maintainability: The separation of interfaces and implementation makes it easier to update individual components without affecting others.
+##### Testability: Business logic can be easily tested in isolation from other layers, promoting better unit test coverage.
+##### Flexibility: Changes in technology (such as switching databases) can be made with minimal impact on the core business logic.
+##### Scalability: The architecture can grow organically as the application evolves, accommodating new features without significant refactoring.
+##### Improved Collaboration: Clear separation of layers can facilitate collaboration between teams focused on different aspects of the application (e.g., frontend vs. backend).
+
+### Disadvantages of Clean Architecture:
+
+##### Complexity: For small applications, the overhead of setting up multiple layers may be unnecessary and complicate the architecture.
+##### Learning Curve: Developers unfamiliar with the concepts or principles may find it challenging to understand and implement clean architecture effectively.
+##### Initial Overhead: Designing an application using Clean Architecture may require more upfront design effort and architectural thinking than simple implementations.
+##### Performance Impact: While abstractions are beneficial for maintainability and scalability, they could introduce performance overhead due to indirection and extra layers of processing.
+##### Over-engineering: There's a risk of over-engineering the architecture for small, trivial applications that do not require such a layered approach.
+
+Clean Architecture is a powerful design principle that promotes the separation of concerns and encourages more maintainable and testable code. It is particularly beneficial for large and complex applications where the agility of changes and robustness of the system are crucial. However, it's essential to consider the requirements of the application, as it may introduce unnecessary complexity for simpler projects.
