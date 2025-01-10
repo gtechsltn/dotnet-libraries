@@ -1,5 +1,10 @@
 # What are your favorites nuget package, libraries or tools for use with .NET?
-+ https://www.reddit.com/r/dotnet/comments/1gyisc0/what_are_your_favorites_nuget_package_libraries/
+
+https://www.reddit.com/r/dotnet/comments/1gyisc0/what_are_your_favorites_nuget_package_libraries/
+
+https://docs.google.com/document/d/1TD7Ksezu830srMmjEb7HfIzcG9Pj6TbOHPMmvFG-sGo/
+
+https://docs.google.com/document/d/1afLe-ByAAQgjaDozCf2mn5Cu8h-95if3WCew1HMe8g0/
 
 # .NET Libraries (2025)
 + ArrayToExcel
